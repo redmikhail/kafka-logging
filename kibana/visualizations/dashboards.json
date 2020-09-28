@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "95d1d3c0-fdf6-11ea-ba90-13d92fae76a4",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Fleet View",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":10,\"h\":8,\"i\":\"1\"},\"id\":\"6dccc560-fdf6-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"1\",\"title\":\"Logs by Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":10,\"y\":0,\"w\":24,\"h\":8,\"i\":\"2\"},\"id\":\"82d8c0c0-fe0b-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"2\",\"title\":\"Logs By Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":15,\"w\":23,\"h\":7,\"i\":\"3\"},\"id\":\"17d7b9c0-fe1a-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"3\",\"title\":\"Zookeeper Errors by Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":15,\"w\":25,\"h\":7,\"i\":\"4\"},\"id\":\"1d6594b0-fe1b-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"4\",\"title\":\"Zookeeper WARN by Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":22,\"w\":23,\"h\":7,\"i\":\"5\"},\"id\":\"f9234160-fe1f-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"5\",\"title\":\"Kafka Brokers Error by Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":22,\"w\":25,\"h\":7,\"i\":\"6\"},\"id\":\"1493caa0-fe20-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"6\",\"title\":\"Kafka Brokers Warning by Tenant\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":34,\"y\":0,\"w\":14,\"h\":8,\"i\":\"7\"},\"id\":\"9ef63460-fe22-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"7\",\"title\":\"Logs per OSD cluster (Kafka Namespace)\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":8,\"w\":48,\"h\":7,\"i\":\"8\"},\"id\":\"ea482370-fe26-11ea-ba90-13d92fae76a4\",\"panelIndex\":\"8\",\"title\":\"Logs over time\",\"type\":\"visualization\",\"version\":\"6.8.1\"},{\"gridData\":{\"x\":0,\"y\":29,\"w\":48,\"h\":14,\"i\":\"9\"},\"version\":\"6.8.1\",\"panelIndex\":\"9\",\"type\":\"search\",\"id\":\"d04bd310-ff78-11ea-9b90-494e686e9bd1\",\"embeddableConfig\":{},\"title\":\"Log Entries from Kafka Namespaces\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "_id": "46e95e60-fe1c-11ea-ba90-13d92fae76a4",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_zookeeper_warn",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"zookeeper\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" WARN \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "9ce24b00-ff3f-11ea-9b90-494e686e9bd1",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_kafka_error",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"kafka\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" ERROR \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "58f6fda0-fd0f-11ea-ba90-13d92fae76a4",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_all_logs_per_tenant",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "fd770640-ff3f-11ea-9b90-494e686e9bd1",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_zookeeper_error",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"zookeeper\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" ERROR \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "460e82b0-ff64-11ea-9b90-494e686e9bd1",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_kafka_warn",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"kafka\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" WARN \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d04bd310-ff78-11ea-9b90-494e686e9bd1",
+    "_type": "search",
+    "_source": {
+      "title": "kafka_logs_per_tenant_message_view",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "kubernetes.namespace_name",
+        "kubernetes.container_name",
+        "message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]
