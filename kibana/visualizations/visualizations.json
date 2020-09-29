@@ -12,9 +12,6 @@
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"zookeeper\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" ERROR \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
     },
-    "_meta": {
-      "savedObjectVersion": 2
-    },
     "_migrationVersion": {
       "visualization": "6.7.2"
     }
@@ -31,9 +28,6 @@
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"kafka\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" ERROR \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
     },
     "_migrationVersion": {
       "visualization": "6.7.2"
@@ -52,9 +46,6 @@
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
     },
-    "_meta": {
-      "savedObjectVersion": 2
-    },
     "_migrationVersion": {
       "visualization": "6.7.2"
     }
@@ -71,9 +62,6 @@
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}}},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
     },
     "_migrationVersion": {
       "visualization": "6.7.2"
@@ -92,9 +80,6 @@
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"zookeeper\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" WARN \"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
     },
-    "_meta": {
-      "savedObjectVersion": 2
-    },
     "_migrationVersion": {
       "visualization": "6.7.2"
     }
@@ -111,9 +96,6 @@
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match\":{\"kubernetes.container_name\":{\"query\":\"kafka\"}}},{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}},{\"match_phrase\":{\"message\":{\"query\":\" WARN \"}}}],\"must_not\":[],\"should\":[]}}},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
     },
     "_migrationVersion": {
       "visualization": "6.7.2"
@@ -132,9 +114,6 @@
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
     },
-    "_meta": {
-      "savedObjectVersion": 2
-    },
     "_migrationVersion": {
       "visualization": "6.7.2"
     }
@@ -151,29 +130,6 @@
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"query\":{\"bool\":{\"filter\":[],\"must\":[{\"match_phrase\":{\"kubernetes.flat_labels\":{\"query\":\"strimzi_io/kind=Kafka\"}}}],\"must_not\":[],\"should\":[]}},\"language\":\"lucene\"},\"filter\":[],\"index\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\"}"
       }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    },
-    "_migrationVersion": {
-      "visualization": "6.7.2"
-    }
-  },
-  {
-    "_id": "80c60c10-ff79-11ea-9b90-494e686e9bd1",
-    "_type": "visualization",
-    "_source": {
-      "title": "New Visualization",
-      "visState": "{\"title\":\"New Visualization\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1601070660539\",\"indexPattern\":\"c3bdaf10-fc21-11ea-ba90-13d92fae76a4\",\"fieldName\":\"kubernetes.container_name.raw\",\"parent\":\"\",\"label\":\"test\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true,\"pinFilters\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
     },
     "_migrationVersion": {
       "visualization": "6.7.2"

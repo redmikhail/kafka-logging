@@ -18,6 +18,11 @@ spec:
       nodeCount: 1
       nodeSelector:
         openshift-logging/storage: 'true'
+      tolerations:
+        - effect: NoSchedule
+          key: openshift-logging/storage
+          operator: Equal
+          value: 'true'
       resources:
         limits:
           memory: 6Gi
@@ -33,6 +38,11 @@ spec:
     kibana:
       nodeSelector:
         openshift-logging/storage: 'true'
+      tolerations:
+        - effect: NoSchedule
+          key: openshift-logging/storage
+          operator: Equal
+          value: 'true'
       replicas: 1
       resources:
         limits:
@@ -46,6 +56,11 @@ spec:
     curator:
       nodeSelector:
         openshift-logging/storage: 'true'
+      tolerations:
+        - effect: NoSchedule
+          key: openshift-logging/storage
+          operator: Equal
+          value: 'true'
       schedule: "* */3 * * *"
   collection:
     logs:
