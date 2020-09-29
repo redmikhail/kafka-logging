@@ -7,7 +7,7 @@ WAIT_FOR_OBJECT_DELETION=${WAIT_FOR_OBJECT_CREATION:-60}
 
 #Show connection 
 oc project
-echo ">>>Will proceed with deletion of the objects in openshift-logging and opeshift-operators-redhat. CTRL+C to cancel"
+echo ">>>Will proceed with deletion of objects in openshift-logging and opeshift-operators-redhat namespaces.You have 10 sec to press CTRL+C to cancel"
 sleep 10
 
 oc project openshift-logging
