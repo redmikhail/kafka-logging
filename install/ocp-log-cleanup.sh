@@ -3,7 +3,7 @@
 set -e
 
 
-WAIT_FOR_OBJECT_DELETION=${WAIT_FOR_OBJECT_CREATION:-60}
+WAIT_FOR_OBJECT_DELETION=${WAIT_FOR_OBJECT_DELETION:-60}
 
 #Show connection 
 oc project
@@ -39,8 +39,10 @@ fi
 echo ">>> Deleting CSV for cluster-logging ..."
 if `oc get sub cluster-logging -n openshift-logging &>/dev/null`; then
   CSV_NAME=$(oc get sub cluster-logging -n openshift-logging -o jsonpath='{.status.installedCSV}')
-  if `oc get csv ${CSV_NAME} -n openshift-logging &>/dev/null`; then
-      oc delete csv ${CSV_NAME} -n openshift-logging 
+  if [ -n "${CSV_NAME}" ]; then
+    if `oc get csv ${CSV_NAME} -n openshift-logging &>/dev/null`; then
+        oc delete csv ${CSV_NAME} -n openshift-logging 
+    fi
   fi 
   # Cleanup subscription
   echo ">>> Deleting subscription for cluster-logging ..."
@@ -58,10 +60,11 @@ oc project openshift-operators-redhat
 echo ">>> Deleting CSV for elasticsearch ..."
 if `oc get sub elasticsearch-operator -n openshift-operators-redhat &>/dev/null`; then
   CSV_NAME=$(oc get sub elasticsearch-operator -n openshift-operators-redhat -o jsonpath='{.status.installedCSV}')
-  if `oc get csv ${CSV_NAME} -n openshift-operators-redhat &> /dev/null`; then
-      oc delete csv ${CSV_NAME} -n openshift-operators-redhat
-  fi 
-
+  if [ -n "${CSV_NAME}" ]; then
+    if `oc get csv ${CSV_NAME} -n openshift-operators-redhat &> /dev/null`; then
+        oc delete csv ${CSV_NAME} -n openshift-operators-redhat
+    fi 
+  fi
   # Cleanup subscription
   echo ">>> Deleting subscription for elasticsearch ..."
   oc delete sub elasticsearch-operator -n openshift-operators-redhat
